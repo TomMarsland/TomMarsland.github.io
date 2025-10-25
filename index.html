@@ -480,6 +480,93 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
+		 /* --- Skills Section --- */
+			    #skills {
+			      text-align: center;
+			      padding: 60px 20px;
+			      background-color: #fff;
+			    }
+			
+			    #skills h2 {
+			      font-size: 2em;
+			      margin-bottom: 40px;
+			      color: #222;
+			    }
+			
+			    .skills-grid {
+			      display: flex;
+			      flex-wrap: wrap;
+			      justify-content: center;
+			      gap: 40px;
+			    }
+			
+			    .skill {
+			      text-align: center;
+			      transition: transform 0.3s ease;
+			    }
+			
+			    .skill img {
+			      width: 100px;
+			      height: 100px;
+			      object-fit: contain;
+			      filter: grayscale(100%);
+			      transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+			    }
+			
+			    .skill:hover img {
+			      filter: grayscale(0%);
+			      transform: scale(1.1);
+			      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+			    }
+			
+			    .skill p {
+			      margin-top: 10px;
+			      font-size: 1em;
+			      color: #333;
+			    }
+			
+			    footer {
+			      text-align: center;
+			      padding: 20px;
+			      background-color: #222;
+			      color: #eee;
+			      font-size: 0.9em;
+			    }
+			  </style>
+			</head>
+			<body>
+			
+			  <section id="skills">
+			    <h2>My Skills</h2>
+			    <div class="skills-grid">
+			      <div class="skill">
+			        <img src="images/python.png" alt="Python">
+			        <p>Python</p>
+			      </div>
+			      <div class="skill">
+			        <img src="images/excel.png" alt="Excel">
+			        <p>Excel</p>
+			      </div>
+			      <div class="skill">
+			        <img src="images/matlab.png" alt="MATLAB">
+			        <p>MATLAB</p>
+			      </div>
+			      <div class="skill">
+			        <img src="images/html.png" alt="HTML">
+			        <p>HTML</p>
+			      </div>
+			      <div class="skill">
+			        <img src="images/css.png" alt="CSS">
+			        <p>CSS</p>
+			      </div>
+			      <div class="skill">
+			        <img src="images/javascript.png" alt="JavaScript">
+			        <p>JavaScript</p>
+			      </div>
+			    </div>
+			  </section>
+
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
