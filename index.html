@@ -545,7 +545,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="inner">
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<a id="github-btn" href="https://github.com/TomMarsland" target="_blank">GitHub</a>
+						<button id="github-btn">GitHub</button>
+						<script>
+						  document.getElementById("github-btn").onclick = function() {
+						    window.open("https://TomMarsland.github.io", "_blank");
+						  };
+						</script>
+
 
 						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
