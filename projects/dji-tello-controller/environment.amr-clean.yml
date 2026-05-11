@@ -1,0 +1,13 @@
+name: AMR_clean
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=2.2.*
+  - matplotlib=3.10.*
+  - pybullet
+  - pip
+  - pip:
+      - torch==2.11.0
+
