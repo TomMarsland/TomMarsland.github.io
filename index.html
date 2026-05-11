@@ -8,569 +8,247 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/Image001.jpeg" alt="" /></a>
-					<h1><strong>Tom Marsland</strong><br />
-					MSc Robotics<br />
-					BEng Mechanical Engineering<br /></h1>
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/Image001.jpeg" alt="Tom Marsland" /></a>
+				<h1><strong>Tom Marsland</strong><br />
+				MSc Robotics<br />
+				BEng Mechanical Engineering<br /></h1>
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section id="one">
+				<header class="major">
+					<h2>About Me</h2>
+				</header>
+				<p>I am a postgraduate Robotics student at the University of Manchester, with an undergraduate degree in Mechanical Engineering from the University of Bristol. I am interested in robotics, control, AI, and embedded systems, especially where software and hardware have to work reliably together. My aim is to keep building practical engineering experience and eventually contribute to large-scale technology projects that have a real-world impact.</p>
+			</section>
+
+			<ul class="actions" style="margin-top: 60px;">
+				<li><a href="assets/Updated.pdf" download class="button" style="min-width: 450px; text-align: center;">View My CV</a></li>
+			</ul>
+			<ul class="actions">
+				<li><a href="#semester-2-projects" class="button">Semester 2 Projects</a></li>
+				<li><a href="#university-projects" class="button">University Projects</a></li>
+				<li><a href="#personal-projects" class="button">Personal Projects</a></li>
+				<li><a href="#skills" class="button">Skills</a></li>
+			</ul>
+
+			<h1>Projects</h1>
+
+			<section id="semester-2-projects">
+				<h2>Semester 2 Updates</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/tello-controller.png" class="image fit thumb">
+							<img src="images/tello-controller.png" alt="DJI Tello controller diagram" />
+						</a>
+						<h3>DJI Tello Drone Controller</h3>
+						<p>The goal was to build a working controller for a DJI Tello drone and test reliable command inputs in practice. I wrote the control logic, mapped keyboard commands to drone movement, tested take-off, landing and directional movement, and used the project to strengthen my Python and real-time control skills.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/astar-path-planning.png" class="image fit thumb">
+							<img src="images/astar-path-planning.png" alt="A star path planning grid" />
+						</a>
+						<h3>A* Path Planning Algorithm</h3>
+						<p>The aim of this project was to implement a path planning algorithm that could search around obstacles and return an efficient route through a grid. I built the A* search logic, experimented with the cost and heuristic functions, and visualised the final route so the behaviour could be checked clearly.</p>
+					</article>
 				</div>
-			</header>
+			</section>
 
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About Me<br /></h2>
-						</header>
-						<p>I am a postgraduate Robotics student at the University of Manchester, with an undergraduate degree in Mechanical Engineering from the University of Bristol. I am passionate about working with cutting-edge technologies and bringing machines to life through intelligent embedded systems. My interests lie at the intersection of robotics, AI, and state-of-the-art technology applications, where I enjoy tackling complex problems and delivering innovative solutions that create real-world impact. My career ambition is to contribute to large-scale, transformative projects that make people go “wow,” while continuously learning and pushing the boundaries of what technology can achieve. Ultimately, I aspire to lead initiatives in Engineering and technology, and one day establish my own technology-driven business.</p>
-					</section>
-
-				<!-- CV Button -->
-				<ul class="actions" style="margin-top: 60px;">
-				  <li><a href="assets/Updated.pdf" download class="button" style="min-width: 450px; text-align: center;">View My CV</a></li>
+			<section id="in-progress">
+				<h2>Currently In Progress</h2>
+				<ul>
+					<li><strong>RL Connect Four:</strong> developing a reinforcement learning agent for Connect Four and comparing its decision making as training improves.</li>
+					<li><strong>Robotic manipulator:</strong> designing and building my own manipulator to improve my mechanical design, actuation, and control knowledge.</li>
 				</ul>
+			</section>
 
-				<!-- Two -->
-				<h1>Projects</h1>
-					<!-- Beckhoff Automation -->
-						<section id="beckhoff-automation">
-						    <h2>Beckhoff Automation</h2>
-						    <div class="row">
-						        <article class="col-6 col-12-xsmall work-item">
-						            <a href="images/unnamed.jpg" class="image fit thumb">
-						                <img src="images/unnamed.jpg" alt="" />
-						            </a>
-						            <h3>Beckhoff Automation - Main Project</h3>
-						            <p>Developed an autonomous CNC machine using NCI in TwinCAT, modifying existing code to trace the Silverstone path. Designed a complete HMI with control, monitoring, and 3D visualisation, and integrated EtherCAT diagnostics for real-time system feedback.</p>
-						        </article>
-								<article class="col-6 col-12-xsmall work-item">
-						            <h3>Beckhoff Automation - Side Projects</h3>
-									</header>
-										<ul>
-										  <li><strong>Office Monitoring:</strong> PLC program with door sensors for out-of-hours security.</li>
-										  <li><strong>XTS Demo:</strong> Assisted in designing and editing the XTS demo state machine.</li>
-										  <li><strong>3D-Printed Attachments:</strong> 3D printed components for XTS/XPlanar demos.</li>
-										  <li><strong>Energy Monitoring:</strong> Logged voltage/current using TwinCAT analytics for system tracking.</li>
-										  <li><strong>Customer Engagement:</strong> Presented projects to engineering teams and customers</li>
-										</ul>
-
-									<!-- Full Experience Button -->
-									<ul class="actions" style="margin-top: 20px;">
-										  <li>
-										    <a href="assets/Beckhoff.pdf" download class="button" style="min-width: 450px; text-align: center;">Read Full Experience</a>
-										  </li>
-										</ul>
-
-						        </article>
-						    </div>
-						</section>
-						
-						<!-- University Projects -->
-						<section id="university-projects">
-						    <h2>University Projects</h2>
-						    <div class="row">
-								<article class="col-6 col-12-xsmall work-item">
-								  <a href="images/366e658d-3cc4-4799-8562-24cc09b46332.mp4" class="image fit thumb" data-poptrox="video">
-								    <img src="images/image00001.jpeg" alt=" Principle of Mechanical Engineering Project" />
-								  </a>
-								  <h3>Principle of Mechanical Engineering Project</h3>
-								  <p>Worked within a diverse team to design, prototype, and implement a solution for moving object 'A' over obstacle 'B', following a complete industry-standard engineering design process from concept to testing to final implementation.</p>
-								</article>
-						        <article class="col-6 col-12-xsmall work-item">
-									  <a href="assets/IRP_REPORT.pdf" download="IRP_REPORT.pdf" class="image fit thumb">
-									    <img src="images/Capture1.PNG" alt="Research paper thumbnail" />
-									  </a>
-									  <h3>Research - Comparing the performance of machine learning and data-driven approaches to reduced-order modelling for non-linear dynamics</h3>
-									  <p>Individual Research Project comparing existing methods for analysing non-linear dynamic systems to machine learning approaches.</p>
-									</article>
-						        <article class="col-6 col-12-xsmall work-item">
-						            <a href="images/fulls/06.jpg" class="image fit thumb">
-						                <img src="images/thumbs/06.jpg" alt="" />
-						            </a>
-						            <h3>Robotic Systems Design Project</h3>
-						            <p>As part of a multidisciplinary team, I helped design and assemble a robot from a box of parts to autonomously navigate an environment and pick up and place blocks into a bin. I contributed to mechanical assembly, learned software and control systems on the fly, and assisted in integrating sensors and troubleshooting functionality under tight deadlines.</p>
-						        </article>
-								<article class="col-6 col-12-xsmall work-item">
-						            <a href="images/FSAI.jpeg" class="image fit thumb">
-						                <img src="images/FSAI.jpeg" alt="" />
-						            </a>
-						            <h3>Formula Student AI - Bristol</h3>
-						            <p>Worked as part of a multidisciplinary team to design, build, and program a fully autonomous robot for the FSAI competition. Applied skills in robotics, sensor integration, and control systems to achieve full functionality, and successfully competed in the tournament, demonstrating problem-solving, teamwork, and real-world engineering application.<p>
-						        </article>
-						    </div>
-						</section>
-
-					<!-- Personal Projects -->
-							<section id="personal-projects">
-							    <h2>Personal Projects</h2>
-							    <div class="row">
-							       <article class="col-6 col-12-xsmall work-item">
-										    <a href="images/output_video.gif" class="image fit thumb">
-										        <img src="images/output_video.gif" alt="" />
-										    </a>
-										    <h3>
-										        <a href="https://github.com/TomMarsland/FootballVisionProgramme" target="_blank" rel="noopener noreferrer">
-										            Football Computer Vision Project
-										        </a>
-										    </h3>
-										    <p>
-										        Developed a computer vision program to track and monitor football players, processing video data and extracting performance metrics. Utilised Kaggle datasets to train and test the system, enabling data-driven analysis of player movements.
-										    </p>
-										</article>
-							        <article class="col-6 col-12-xsmall work-item">
-							            <a href="images/MNSIT.png" class="image fit thumb">
-							                <img src="images/MNSIT.png" alt="" />
-							            </a>
-							            <h3><a href="https://github.com/TomMarsland/MNIST" target="_blank" rel="noopener noreferrer">
-											Handwritten Digit Recognition using CNN </a>
-										</h3>
-							            <p> Built and trained a convolutional neural network (CNN) to accurately classify handwritten digits from the MNIST dataset. Preprocessed the data, optimized the network architecture, and evaluated its performance to achieve high accuracy in digit recognition.</p>
-							        </article>
-							        <article class="col-6 col-12-xsmall work-item">
-							            <a href="images/ROStracking.png" class="image fit thumb">
-							                <img src="images/ROStracking.png" alt="" />
-										<h3><a href="https://github.com/TomMarsland/BallTrackingROS" target="_blank" rel="noopener noreferrer">
-							        	ROS tracking system</a>
-										</h3>
-							            <p>Used ROS to create a motion tracking system for a tennis ball, developing the simulation to capture and analyse its trajectory and motion patterns. </p>
-							        </article>
-							    </div>
-							</section>
-
-				<!-- Skills -->
-						<section id="skills">
-						    <header class="major">
-						        <h2>Skills</h2>
-						    </header>
-						
-							<section id="skills">
-							    <header class="major">
-							    </header>
-							
-							    <div style="display: inline-block; width: 48%; vertical-align: top;">
-							        <h3>Technical Skills</h3>
-							        <ul>
-							            <li>Python</li>
-										<li>PyTorch</li>
-							            <li>MATLAB</li>
-							            <li>ROS (Robot Operating System)</li>
-							            <li>Autodesk Fusion</li>
-							            <li>Machine Learning</li>
-							            <li>Computer Vision</li>
-										<li>Twincat</li>
-										<li>Abaqus CAE</li>
-										<li>Linux (ubuntu)</li>
-										<li>Raspberry Pi</li>
-										<li>Arduino</li>
-							        </ul>
-							    </div>
-							
-							    <div style="display: inline-block; width: 48%; vertical-align: top;">
-							        <h3>Personal Attributes</h3>
-							        <ul>
-							            <li>Strong work ethic</li>
-							            <li>Time management</li>
-							            <li>Discipline</li>
-							            <li>Resilience</li>
-							            <li>Teamwork</li>
-							            <li>Endeavour</li>
-										<li>Collaboration</li>
-										<li>Problem Solving</li>
-										<li>Adaptability</li>
-										<li>Leadership</li>
-										<li>Project Managment</li>
-										
-							        </ul>
-							    </div>
-							</section>
-
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Feel free to say hi, ask any questions, or get in touch with me. I check messages daily</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										(+44)7549660634
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">tomarsland@outlook.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-						<ul class="icons">
-						    <!-- GitHub link -->
-						    <li>
-						        <a href="https://github.com/TomMarsland" class="icon brands fa-github" target="_blank">
-						            <span class="label">GitHub</span>
-						        </a>
-						    </li>
-						
-						    <!-- Email link -->
-						    <li>
-						        <a href="mailto:tomarsland@outlook.com" class="icon solid fa-envelope">
-						            <span class="label">Email</span>
-						        </a>
-						    </li>
+			<section id="beckhoff-automation">
+				<h2>Beckhoff Automation</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/unnamed.jpg" class="image fit thumb">
+							<img src="images/unnamed.jpg" alt="Beckhoff automation rig" />
+						</a>
+						<h3>Beckhoff Automation - Main Project</h3>
+						<p>The aim was to demonstrate automated CNC-style motion using Beckhoff hardware and TwinCAT. I modified the NCI control code to trace the Silverstone path, designed the HMI for control and monitoring, added 3D visualisation, and integrated EtherCAT diagnostics for real-time system feedback.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<h3>Beckhoff Automation - Side Projects</h3>
+						<ul>
+							<li><strong>Office Monitoring:</strong> PLC program with door sensors for out-of-hours security.</li>
+							<li><strong>XTS Demo:</strong> Assisted in designing and editing the XTS demo state machine.</li>
+							<li><strong>3D-Printed Attachments:</strong> 3D printed components for XTS/XPlanar demos.</li>
+							<li><strong>Energy Monitoring:</strong> Logged voltage/current using TwinCAT analytics for system tracking.</li>
+							<li><strong>Customer Engagement:</strong> Presented projects to engineering teams and customers.</li>
 						</ul>
-					<ul class="copyright">
-						<li>&copy; TomMarsland2025</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<ul class="actions" style="margin-top: 20px;">
+							<li><a href="assets/Beckhoff.pdf" download class="button" style="min-width: 450px; text-align: center;">Read Full Experience</a></li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section id="university-projects">
+				<h2>University Projects</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/366e658d-3cc4-4799-8562-24cc09b46332.mp4" class="image fit thumb" data-poptrox="video">
+							<img src="images/image00001.jpeg" alt="Mechanical engineering project" />
+						</a>
+						<h3>Principle of Mechanical Engineering Project</h3>
+						<p>The project goal was to move object A over obstacle B using a designed mechanical system. I worked in a team through concept generation, prototyping, testing and final build, contributing to the engineering design process and practical implementation.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="assets/IRP_REPORT.pdf" download="IRP_REPORT.pdf" class="image fit thumb">
+							<img src="images/Capture1.PNG" alt="Research report thumbnail" />
+						</a>
+						<h3>Research - Reduced-Order Modelling for Non-Linear Dynamics</h3>
+						<p>This individual research project compared reduced-order modelling methods for non-linear dynamic systems with machine learning approaches. I reviewed the existing techniques, carried out the comparison, and wrote the final report to explain the strengths and limits of each approach.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/fulls/06.jpg" class="image fit thumb">
+							<img src="images/thumbs/06.jpg" alt="Robotic systems project" />
+						</a>
+						<h3>Robotic Systems Design Project</h3>
+						<p>The goal was to build a robot that could autonomously navigate an environment and place blocks into a bin. I contributed to mechanical assembly, learnt the software and control systems during the project, helped integrate sensors, and supported troubleshooting when the robot behaviour did not match the plan.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/FSAI.jpeg" class="image fit thumb">
+							<img src="images/FSAI.jpeg" alt="Formula Student AI robot" />
+						</a>
+						<h3>Formula Student AI - Bristol</h3>
+						<p>The aim was to design, build, and program a fully autonomous robot for the Formula Student AI competition. I worked with a multidisciplinary team on robotics, sensor integration and control, helping the system reach competition-ready functionality.</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="personal-projects">
+				<h2>Personal Projects</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/output_video.gif" class="image fit thumb">
+							<img src="images/output_video.gif" alt="Football computer vision tracking" />
+						</a>
+						<h3><a href="https://github.com/TomMarsland/FootballVisionProgramme" target="_blank" rel="noopener noreferrer">Football Computer Vision Project</a></h3>
+						<p>The goal was to track football players from match footage and extract useful movement information. I developed the computer vision pipeline, used Kaggle data for testing, and added overlays for player tracking, movement, and team possession analysis.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/MNSIT.png" class="image fit thumb">
+							<img src="images/MNSIT.png" alt="MNIST digit recognition" />
+						</a>
+						<h3><a href="https://github.com/TomMarsland/MNIST" target="_blank" rel="noopener noreferrer">Handwritten Digit Recognition using CNN</a></h3>
+						<p>The aim was to build a simple image classifier for handwritten digits. I preprocessed the MNIST data, trained a convolutional neural network, adjusted the model structure, and evaluated its accuracy on the test set.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/ROStracking.png" class="image fit thumb">
+							<img src="images/ROStracking.png" alt="ROS ball tracking simulation" />
+						</a>
+						<h3><a href="https://github.com/TomMarsland/BallTrackingROS" target="_blank" rel="noopener noreferrer">ROS Tracking System</a></h3>
+						<p>The goal was to create a ROS-based tracking system for a moving tennis ball. I built the simulation, set up the tracking behaviour, and used the result to practise robot perception and motion analysis in a controlled environment.</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="skills">
+				<header class="major">
+					<h2>Skills</h2>
+				</header>
+				<div style="display: inline-block; width: 48%; vertical-align: top;">
+					<h3>Technical Skills</h3>
+					<ul>
+						<li>Python</li>
+						<li>PyTorch</li>
+						<li>MATLAB</li>
+						<li>ROS (Robot Operating System)</li>
+						<li>Autodesk Fusion</li>
+						<li>Machine Learning</li>
+						<li>Computer Vision</li>
+						<li>TwinCAT</li>
+						<li>Abaqus CAE</li>
+						<li>Linux (Ubuntu)</li>
+						<li>Raspberry Pi</li>
+						<li>Arduino</li>
 					</ul>
 				</div>
-			</footer>
+				<div style="display: inline-block; width: 48%; vertical-align: top;">
+					<h3>Personal Attributes</h3>
+					<ul>
+						<li>Strong work ethic</li>
+						<li>Time management</li>
+						<li>Discipline</li>
+						<li>Resilience</li>
+						<li>Teamwork</li>
+						<li>Collaboration</li>
+						<li>Problem solving</li>
+						<li>Adaptability</li>
+						<li>Leadership</li>
+						<li>Project management</li>
+					</ul>
+				</div>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section id="three">
+				<h2>Get In Touch</h2>
+				<p>Feel free to say hi, ask any questions, or get in touch with me. I check messages daily.</p>
+				<div class="row">
+					<div class="col-8 col-12-small">
+						<form method="post" action="#">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+								<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							</div>
+						</form>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</div>
+					<div class="col-4 col-12-small">
+						<ul class="labeled-icons">
+							<li>
+								<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+								(+44)7549660634
+							</li>
+							<li>
+								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+								<a href="mailto:tomarsland@outlook.com">tomarsland@outlook.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li>
+						<a href="https://github.com/TomMarsland" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:tomarsland@outlook.com" class="icon solid fa-envelope">
+							<span class="label">Email</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; TomMarsland2025</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
