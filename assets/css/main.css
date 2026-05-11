@@ -2061,13 +2061,17 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.thumb {
-			text-align: center;
+	.image.thumb {
+		text-align: center;
+	}
+
+		.image.thumb.gallery-extra {
+			display: none;
 		}
 
-			.image.thumb:after {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
+		.image.thumb:after {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
