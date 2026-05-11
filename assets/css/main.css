@@ -2841,11 +2841,19 @@ input, select, textarea {
 			background: rgba(0, 0, 0, 0.01);
 			cursor: pointer;
 			height: 100%;
-			opacity: 0;
+			opacity: 0.85;
 			position: absolute;
 			top: 0;
-			width: 50%;
+			width: 5em;
 		}
+
+			.poptrox-popup .nav-next {
+				background: linear-gradient(to left, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0));
+			}
+
+			.poptrox-popup .nav-previous {
+				background: linear-gradient(to right, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0));
+			}
 
 			.poptrox-popup .nav-next:before,
 			.poptrox-popup .nav-previous:before {
