@@ -30,41 +30,12 @@
 				<li><a href="assets/Updated.pdf" download class="button" style="min-width: 450px; text-align: center;">View My CV</a></li>
 			</ul>
 			<ul class="actions">
-				<li><a href="#semester-2-projects" class="button">Semester 2 Projects</a></li>
 				<li><a href="#university-projects" class="button">University Projects</a></li>
 				<li><a href="#personal-projects" class="button">Personal Projects</a></li>
 				<li><a href="#skills" class="button">Skills</a></li>
 			</ul>
 
 			<h1>Projects</h1>
-
-			<section id="semester-2-projects">
-				<h2>Semester 2 Updates</h2>
-				<div class="row">
-					<article class="col-6 col-12-xsmall work-item">
-						<a href="images/tello-drone-controller.mp4" class="image fit thumb" data-poptrox="video">
-							<img src="images/tello-drone-video-thumb.jpg" alt="DJI Tello drone test flight" />
-						</a>
-						<h3>DJI Tello Drone Controller</h3>
-						<p>The goal was to build a working controller for a DJI Tello drone and test reliable command inputs in practice. I wrote the control logic, mapped keyboard commands to drone movement, tested take-off, landing and directional movement, and used the project to strengthen my Python and real-time control skills.</p>
-					</article>
-					<article class="col-6 col-12-xsmall work-item">
-						<a href="images/astar-path-planning.png" class="image fit thumb">
-							<img src="images/astar-path-planning.png" alt="A star path planning grid" />
-						</a>
-						<h3>A* Path Planning Algorithm</h3>
-						<p>The aim of this project was to implement a path planning algorithm that could search around obstacles and return an efficient route through a grid. I built the A* search logic, experimented with the cost and heuristic functions, and visualised the final route so the behaviour could be checked clearly.</p>
-					</article>
-				</div>
-			</section>
-
-			<section id="in-progress">
-				<h2>Currently In Progress</h2>
-				<ul>
-					<li><strong>RL Connect Four:</strong> developing a reinforcement learning agent for Connect Four and comparing its decision making as training improves.</li>
-					<li><strong>Robotic manipulator:</strong> designing and building my own manipulator to improve my mechanical design, actuation, and control knowledge.</li>
-				</ul>
-			</section>
 
 			<section id="beckhoff-automation">
 				<h2>Beckhoff Automation</h2>
@@ -96,6 +67,20 @@
 				<h2>University Projects</h2>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/tello-drone-controller.mp4" class="image fit thumb" data-poptrox="video">
+							<img src="images/tello-drone-video-thumb.jpg" alt="DJI Tello drone test flight" />
+						</a>
+						<h3>DJI Tello Drone Flying Controller</h3>
+						<p>The goal was to build and test a working controller for a DJI Tello drone as part of university work. I wrote the control logic, mapped keyboard commands to movement, and tested take-off, landing and directional movement to improve my Python and real-time control skills.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/astar-path-planning.png" class="image fit thumb">
+							<img src="images/astar-path-planning.png" alt="A star path planning grid" />
+						</a>
+						<h3>A* Path Planning Algorithm</h3>
+						<p>This AMR coursework focused on grid-based path planning for an autonomous mobile robot. I implemented the A* search logic, used a Euclidean-distance heuristic, handled obstacles and start/end points, and connected the algorithm to a PyQt GUI so the route could be tested visually.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/366e658d-3cc4-4799-8562-24cc09b46332.mp4" class="image fit thumb" data-poptrox="video">
 							<img src="images/image00001.jpeg" alt="Mechanical engineering project" />
 						</a>
@@ -110,11 +95,11 @@
 						<p>This individual research project compared reduced-order modelling methods for non-linear dynamic systems with machine learning approaches. I reviewed the existing techniques, carried out the comparison, and wrote the final report to explain the strengths and limits of each approach.</p>
 					</article>
 					<article class="col-6 col-12-xsmall work-item">
-						<a href="images/fulls/06.jpg" class="image fit thumb">
-							<img src="images/thumbs/06.jpg" alt="Robotic systems project" />
+						<a href="images/leo-rover-autonomous-robot.mp4" class="image fit thumb" data-poptrox="video">
+							<img src="images/leo-rover-thumb.jpg" alt="Leo Rover autonomous robot in test arena" />
 						</a>
-						<h3>Robotic Systems Design Project</h3>
-						<p>The goal was to build a robot that could autonomously navigate an environment and place blocks into a bin. I contributed to mechanical assembly, learnt the software and control systems during the project, helped integrate sensors, and supported troubleshooting when the robot behaviour did not match the plan.</p>
+						<h3>Leo Rover Autonomous Robot Project</h3>
+						<p>The goal was to build a Leo Rover system that could autonomously navigate an arena and place blocks into a bin. I contributed to mechanical assembly, learnt the software and control systems during the project, helped integrate sensors, and supported troubleshooting when the robot behaviour did not match the plan.</p>
 					</article>
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/FSAI.jpeg" class="image fit thumb">
@@ -129,6 +114,27 @@
 			<section id="personal-projects">
 				<h2>Personal Projects</h2>
 				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/cascade-pid-paths.png" class="image fit thumb">
+							<img src="images/cascade-pid-paths.png" alt="Cascade PID controller path comparison" />
+						</a>
+						<h3>Cascade PID Drone Controller</h3>
+						<p>I worked on a cascade PID controller for drone position control and tested how different gains and speed settings affected the path and stopping accuracy. My contribution was tuning the controller, running simulations, and comparing the resulting position traces against the target behaviour.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/rl-connect-four-placeholder.png" class="image fit thumb">
+							<img src="images/rl-connect-four-placeholder.png" alt="Connect Four reinforcement learning placeholder" />
+						</a>
+						<h3>RL Connect Four - In Progress</h3>
+						<p>I am developing a reinforcement learning agent for Connect Four and using it to practise training loops, reward design and game-state evaluation. This is still in progress, so I will add the code link once the project is ready to share.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/so-arm100-autocad.png" class="image fit thumb">
+							<img src="images/so-arm100-autocad.png" alt="SO-ARM100 robotic manipulator in CAD environment" />
+						</a>
+						<h3>SO-ARM100 Robotic Manipulator - In Progress</h3>
+						<p>I am planning and building a small robotic manipulator based around the SO-ARM100 style of open robotic arm. The aim is to improve my practical understanding of CAD, mechanical assembly, actuation and basic arm control before moving on to more advanced manipulation tasks. Reference model: <a href="https://github.com/TheRobotStudio/SO-ARM100" target="_blank" rel="noopener noreferrer">TheRobotStudio/SO-ARM100</a>.</p>
+					</article>
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="images/output_video.gif" class="image fit thumb">
 							<img src="images/output_video.gif" alt="Football computer vision tracking" />
