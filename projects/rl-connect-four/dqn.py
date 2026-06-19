@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 import random
+import numpy as np
+
 
 class QNetwork(nn.Module):
     # nn.module is a base class for all neural network modules. Your models should also subclass this class
@@ -46,6 +48,8 @@ class DQNAgent:
         self.qnetwork_local = QNetwork(state_size, action_size, seed)
         self.qnetwork_target = QNetwork(state_size, action_size, seed)
 
+        self.qnetwork_target.load_state_dict(self.qnetwork_local.state_dict())
+
         self.optimizer = torch.optim.Adam(self.qnetwork_local.parameters(), lr=0.001)
         self.memory = ReplayBuffer(10000)
         self.batch_size = 64
@@ -53,20 +57,46 @@ class DQNAgent:
         self.tau = 0.001
 
     def step(self, state, action, reward, next_state, done):
-        # step function to save experience in replay buffer and   from it
+        # step function to save experience in replay buffer
         self.memory.push(state, action, reward, next_state, done)
         if len(self.memory) > self.batch_size:
             experiences = self.memory.sample(self.batch_size)
             self.learn(experiences)
     
-    def act(self, state, eps=0.):
+    def act(self, state, valid_actions, eps=0.):
         # act function to select action using epsilon-greedy policy
         if random.random() > eps:
             state = torch.from_numpy(state).float().unsqueeze(0)
-            self.qnetwork_local.eval()
             with torch.no_grad():
                 action_values = self.qnetwork_local(state)
-            self.qnetwork_local.train()
-            return torch.argmax(action_values).item()
+            valid_q_values = action_values[0][valid_actions]
+            best_valid_index = torch.argmax(valid_q_values).item()
+            return valid_actions[best_valid_index]
         else:
-            return random.choice(range(self.action_size))
+            return random.choice(valid_actions)
+
+    def learn(self, experiences):
+        states, actions, rewards, next_states, dones = zip(*experiences)
+        states = torch.from_numpy(np.vstack(states)).float()
+        actions = torch.from_numpy(np.vstack(actions)).long()
+        rewards = torch.from_numpy(np.vstack(rewards)).float()
+        next_states = torch.from_numpy(np.vstack(next_states)).float()
+        dones = torch.from_numpy(np.vstack(dones).astype(np.uint8)).float()
+
+        q_expected = self.qnetwork_local(states).gather(1, actions)
+
+        with torch.no_grad():
+            q_next = self.qnetwork_target(next_states).max(1)[0].unsqueeze(1)
+            q_target = rewards + (self.gamma*q_next*(1-dones))
+
+        loss = nn.MSELoss()(q_expected, q_target)
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
+
+        self.soft_update(self.qnetwork_local, self.qnetwork_target)
+
+    def soft_update(self, local_model, target_model):
+        for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
+            target_param.data.copy_(self.tau*local_param.data + (1.0-self.tau)*target_param.data)
+

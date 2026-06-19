@@ -95,6 +95,6 @@ class ConnectFour:
         print(self.board)
 
 
-C4 = ConnectFour()
-
-print(C4.board[0][0])
+if __name__ == "__main__":
+    C4 = ConnectFour()
+    print(C4.board)
