@@ -196,10 +196,16 @@
 				<p>Feel free to say hi, ask any questions, or get in touch with me. I check messages daily.</p>
 				<div class="row">
 					<div class="col-8 col-12-small">
-						<ul class="actions">
-							<li><a href="mailto:tomarsland@outlook.com?subject=Portfolio%20enquiry" class="button primary">Email Me</a></li>
-							<li><a href="https://github.com/TomMarsland" class="button" target="_blank" rel="noopener noreferrer">View GitHub</a></li>
-						</ul>
+						<form method="post" action="mailto:tomarsland@outlook.com" enctype="text/plain">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+								<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
 					</div>
 					<div class="col-4 col-12-small">
 						<ul class="labeled-icons">

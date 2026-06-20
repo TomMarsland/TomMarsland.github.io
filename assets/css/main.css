@@ -2584,10 +2584,10 @@ input, select, textarea {
 /* Skills */
 
 	.skill-columns {
-		align-items: start;
+		align-items: stretch;
 		display: grid;
-		gap: 2.5em;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 2em;
+		grid-template-columns: repeat(2, minmax(12em, 1fr));
 	}
 
 		.skill-column {
@@ -2600,17 +2600,18 @@ input, select, textarea {
 		}
 
 		.skill-column ul {
-			display: grid;
-			gap: 0.15em 1.25em;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			line-height: 1.55em;
+			line-height: 1.45em;
 			margin-bottom: 0;
 		}
+
+			.skill-column li {
+				margin-bottom: 0.25em;
+			}
 
 /* Contact */
 
 	#three .actions {
-		margin-top: 0.5em;
+		margin-top: 2em;
 	}
 
 /* Header */
@@ -3234,12 +3235,7 @@ input, select, textarea {
 
 			.skill-columns {
 				gap: 1.5em;
-				grid-template-columns: 1fr;
 			}
-
-				.skill-column ul {
-					grid-template-columns: 1fr;
-				}
 
 		/* Poptrox */
 
@@ -3267,6 +3263,12 @@ input, select, textarea {
 				#header h1 br {
 					display: none;
 				}
+
+		/* Skills */
+
+			.skill-columns {
+				grid-template-columns: 1fr;
+			}
 
 		/* Footer */
 
