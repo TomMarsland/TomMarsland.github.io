@@ -2584,12 +2584,26 @@ input, select, textarea {
 /* Skills */
 
 	.skill-columns {
+		align-items: start;
 		display: grid;
 		gap: 2.5em;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
+		.skill-column {
+			border-top: solid 2px #efefef;
+			padding-top: 1.25em;
+		}
+
+		.skill-column h3 {
+			margin-bottom: 0.75em;
+		}
+
 		.skill-column ul {
+			display: grid;
+			gap: 0.15em 1.25em;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			line-height: 1.55em;
 			margin-bottom: 0;
 		}
 
@@ -3222,6 +3236,10 @@ input, select, textarea {
 				gap: 1.5em;
 				grid-template-columns: 1fr;
 			}
+
+				.skill-column ul {
+					grid-template-columns: 1fr;
+				}
 
 		/* Poptrox */
 
